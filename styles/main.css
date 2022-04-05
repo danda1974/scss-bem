@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  background-color: #28527a;
+  height: 10vh;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  background-color: #28527a;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou {
+  background-color: #fafafa;
+  height: -50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Dancing Script", serif;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #f0a500;
+  color: #fafafa;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+.button--form {
+  background-color: #55a5f0;
+  width: 100%;
+  border: none;
+}
+
+.intro {
+  text-align: center;
+}
+.intro .intro__heading {
+  color: #28527a;
+  font-size: 50px;
+}
+.intro__sub-heading {
+  font-family: "Dancing Script", serif;
+  font-size: 25px;
+  margin: 20px 0;
+}
+.intro__button {
+  margin: 0 auto;
+}
+
+.wave {
+  fill: #28527a;
+  fill-opacity: 1;
+  vertical-align: bottom;
+}
+
+.form {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form__field {
+  margin-bottom: 20px;
+}
+
+.thankyou {
+  text-align: center;
+}
+.thankyou .thankyou__sub-heading {
+  font-family: "Dancing Script", serif;
+  font-size: 25px;
+  margin: 20px 0;
+}
+.thankyou .thankyou__button {
+  border: solid red 2px;
+  background-color: white;
+  margin-bottom: 70px;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-color: #28527a;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+
+.wave2 {
+  background-color: #28527a;
+  fill: #fafafa;
+  fill-opacity: 1;
+  vertical-align: bottom;
+}
+
+.footer {
+  background-color: #28527a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.footer * {
+  color: white;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,113 @@
+@use "_base.scss" as *;
+
+// COMPONENTS -> INDIVIDUAL ITEMS / ELEMENTS / BUTTONS / FORMS
+
+.logo {
+  font-family: $font-display;
+  color: $color-white;
+  font-size: 20px;
+}
+
+.button {
+  background-color: $color-secondary;
+  color: $color-white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: block;
+  width: 100px;
+  text-align: center;
+// .button
+// MODIFIER
+  &--form {
+    background-color: $color-primary-light;
+    width: 100%;
+    border: none;
+  }
+}
+
+// NESTING
+
+.intro {
+  text-align: center;
+  // instead of h1 -> rename according to BEM as in index.html
+  .intro__heading {
+    color: $color-primary;
+    font-size: 50px;
+  }
+  // & = .intro
+  &__sub-heading {
+    font-family: $font-display;
+    font-size: 25px;
+    margin: 20px 0;    
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.wave {
+  fill: $color-primary;
+  fill-opacity: 1;
+  vertical-align: bottom;
+}
+
+.form {
+  background-color: $color-white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+// .form__field
+  &__field {
+    margin-bottom: 20px;
+  }
+}
+
+.thankyou {
+  text-align: center;
+  .thankyou__sub-heading {
+    font-family: $font-display;
+    font-size: 25px;
+    margin: 20px 0;  
+  }
+  .thankyou__button {
+    border: solid red 2px;
+    background-color: white;
+    margin-bottom: 70px;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: $color-primary;
+    display: block;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+.wave2 {
+  background-color: $color-primary;
+  fill: $color-white;
+  fill-opacity: 1;
+  vertical-align: bottom;
+}
+
+.footer {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  & * {
+    color: white;
+  }
+}
+// & * {} ersetzt dass ich die einzelnen Footer auch weiß machen muss, sonst:
+// .footer__middle {
+//   color: white;
+// }
+
+// .footer__right {
+//   color: white;
+// }
